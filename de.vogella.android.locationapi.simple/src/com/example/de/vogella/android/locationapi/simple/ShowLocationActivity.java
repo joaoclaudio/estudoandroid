@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,9 @@ public class ShowLocationActivity extends Activity implements LocationListener {
 	private LocationManager locationManager;
 	private String provider;
 	private boolean enabled;
+	private String urlbase = "http://maps.googleapis.com/maps/api"
+			+ "/staticmap?size=400x400&sensor=true&markers=color:red|%s,%s";
+	private WebView mapa;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,7 @@ public class ShowLocationActivity extends Activity implements LocationListener {
 		setContentView(R.layout.activity_show_location);
 		latitudeField = (TextView) findViewById(R.id.TextView02);
 		longitudeField = (TextView) findViewById(R.id.TextView04);
+		mapa = (WebView) findViewById(R.id.mapa);
 
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		enabled = locationManager
@@ -63,7 +68,8 @@ public class ShowLocationActivity extends Activity implements LocationListener {
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		locationManager.requestLocationUpdates(provider, 400, 1, this);
+		Toast.makeText(this, "Está no onResume()", Toast.LENGTH_SHORT).show();
+		locationManager.requestLocationUpdates(provider, 1000*60*1, 1, this);
 	}
 
 	@Override
@@ -95,8 +101,12 @@ public class ShowLocationActivity extends Activity implements LocationListener {
 	@Override
 	public void onLocationChanged(Location location) {
 		// TODO Auto-generated method stub
-		latitudeField.setText(String.valueOf(location.getLatitude()));
-		longitudeField.setText(String.valueOf(location.getLongitude()));
+		String latitudeStr = String.valueOf(location.getLatitude());
+		String longitudeStr = String.valueOf(location.getLongitude());
+		latitudeField.setText(latitudeStr);
+		longitudeField.setText(longitudeStr);
+		String url = String.format(urlbase, latitudeStr, longitudeStr);
+		mapa.loadUrl(url);
 	}
 
 	@Override
@@ -110,7 +120,6 @@ public class ShowLocationActivity extends Activity implements LocationListener {
 		// TODO Auto-generated method stub
 		Toast.makeText(this, "Enabled new provider " + provider,
 				Toast.LENGTH_SHORT).show();
-		locationManager.requestLocationUpdates(provider, 400, 1, this);
 
 	}
 

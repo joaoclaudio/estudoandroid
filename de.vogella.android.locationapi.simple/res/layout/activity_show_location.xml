@@ -53,5 +53,10 @@
             android:textSize="20dip" >
         </TextView>
     </LinearLayout>
+    
+    <WebView 
+        android:id="@+id/mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
