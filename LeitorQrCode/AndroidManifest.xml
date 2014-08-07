@@ -36,6 +36,10 @@
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
 - See more at: http://techiedreams.com/android-zxing-barcode-scanner-integration/#sthash.iSkoEpHj.dpuf
+        <activity
+            android:name=".ScanActivity"
+            android:label="@string/title_activity_scan" >
+        </activity>
     </application>
 
 </manifest>

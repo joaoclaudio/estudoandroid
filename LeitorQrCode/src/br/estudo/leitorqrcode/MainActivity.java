@@ -29,10 +29,13 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			if (v.getId() == R.id.chamar_leitor) {
-				Intent intent = new Intent(
-						"com.google.zxing.client.android.SCAN");
-				intent.putExtra("SCAN_MODE", "SCAN_MODE");
-				startActivityForResult(intent, SCANNER_REQUEST_CODE);
+				//Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+				//intent.putExtra("SCAN_MODE", "SCAN_MODE");
+				//startActivityForResult(intent, SCANNER_REQUEST_CODE);
+				//Intent intent = new Intent(MainActivity.this,LeitorActivity.class);
+				//intent.putExtra("SCAN_MODE", "SCAN_MODE");
+				//startActivityForResult(intent, SCANNER_REQUEST_CODE);
+				//startActivity(intent);
 			}
 		}
 	};

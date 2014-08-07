@@ -38,7 +38,8 @@ public class ShowLocationActivity extends Activity implements LocationListener {
 		enabled = locationManager
 				.isProviderEnabled(LocationManager.GPS_PROVIDER);
 		Criteria criteria = new Criteria();
-		provider = locationManager.getBestProvider(criteria, false);
+		//provider = locationManager.getBestProvider(criteria, false);
+		provider = LocationManager.GPS_PROVIDER;
 		Location location = locationManager.getLastKnownLocation(provider);
 
 		// check if enabled and if not send user to the GSP settings
