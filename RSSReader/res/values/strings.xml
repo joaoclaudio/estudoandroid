@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">RSS Reader</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="default_text">Default Text</string>
+    <string name="press_update">Press to update</string>
 
 </resources>
