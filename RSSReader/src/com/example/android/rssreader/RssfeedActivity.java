@@ -1,6 +1,7 @@
 package com.example.android.rssreader;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class RssfeedActivity extends Activity implements
@@ -8,8 +9,8 @@ public class RssfeedActivity extends Activity implements
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_rssfeed);
+		super.onCreate(savedInstanceState);		
+		setContentView(R.layout.activity_rssfeed);		
 	}
 
 	// if the wizard generated an onCreateOptionsMenu you can delete
@@ -22,6 +23,11 @@ public class RssfeedActivity extends Activity implements
 				.findFragmentById(R.id.detailFragment);
 		if (fragment != null && fragment.isInLayout()){
 			fragment.setText(link);
+		} else {
+			Intent intent = new Intent(getApplicationContext(),
+					DetailActivity.class);
+			intent.putExtra(DetailActivity.EXTRA_URL, link);
+			startActivity(intent);
 		}
 
 	}
