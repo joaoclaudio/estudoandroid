@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculadora5</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_number">0</string>
+    <string name="texto_somar">+</string>
+    <string name="texto_subtrair">-</string>
+    <string name="texto_multiplicar">*</string>
+    <string name="texto_dividir">/</string>
+
+</resources>
