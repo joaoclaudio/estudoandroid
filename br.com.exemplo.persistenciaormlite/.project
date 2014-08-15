@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PersistenciaORMLiteTeste</name>
+	<name>br.com.exemplo.persistenciaormlite</name>
 	<comment></comment>
 	<projects>
-		<project>PersistenciaORMLite</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
