@@ -1,15 +1,11 @@
 package br.estudo.audioplayer;
 
-import org.xml.sax.Parser;
-
-import android.support.v7.app.ActionBarActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewDebug.IntToString;
 import android.widget.Button;
 import android.widget.TextView;
 

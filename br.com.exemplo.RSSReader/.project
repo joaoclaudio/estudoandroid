@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>br.com.exemplo.persistenciaormlite.test</name>
+	<name>br.com.exemplo.RSSReader</name>
 	<comment></comment>
 	<projects>
-		<project>PersistenciaORMLite</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
