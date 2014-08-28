@@ -9,8 +9,25 @@
     <string name="entrar">Entrar</string>
     <string name="erro_autenticacao">Usuário ou senha inválidos</string>
     <string name="novo_gasto">Novo gasto</string>
-    <string name="nova_viagem">Nova viagem</string>
+    <string name="nova_viagem">Nova Viagem</string>
     <string name="minhas_viagens">Minhas viagens</string>
     <string name="configuracoes">Configurações</string>
+    <string name="destino">Destino</string>
+    <string name="tipo_da_viagem">Tipo da Viagem</string>
+    <string name="lazer">Lazer</string>
+    <string name="negocios">Negocios</string>
+    <string name="data_da_chegada">Data da Chegada</string>
+    <string name="data_da_saida">Data da Saida</string>
+    <string name="selecione">Selecione</string>
+    <string name="orcamento">Orcamento</string>
+    <string name="criar_nova_viagem">Criar Nova Viagem</string>
+    <string name="quantidade_de_pessoas">Quantidade de Pessoas</string>
+    <string name="title_activity_gasto">GastoActivity</string>
+    <string name="categoria">Categoria</string>
+    <string name="valor">Valor</string>
+    <string name="data">Data</string>
+    <string name="descricao">Descrição</string>
+    <string name="local">Local</string>
+    <string name="gastei">Gastei</string>
 
 </resources>
