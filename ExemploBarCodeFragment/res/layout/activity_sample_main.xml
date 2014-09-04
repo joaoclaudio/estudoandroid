@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleMainActivity" 
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/sample"
+        android:name="com.abhi.barcode.frag.libv2.BarcodeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
